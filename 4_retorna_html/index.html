@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução jQuery</title>
+    <!-- Chamando biblioteca jQuery -->
+    <script type="text/javascript" src="jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- Funcionalidades da página -->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".content").html("<img width='1200px' src='https://img-cdn.hltv.org/gallerypicture/Q9dP3nH_Mv9J65-IH3Flpr.jpg?ixlib=java-2.1.0&w=1200&s=3b599af90c0c575593fa8b1502812da1'>");
+
+            $("img").click(function(){
+             $(".hello").html("<h1>A imagem foi clicada</h1>")
+            })
+        });
+    </script>
+</head>
+
+<body>
+    <div class="content"></div>
+    <div class="hello"></div>
+</body>
+
+</html>
